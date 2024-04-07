@@ -25,7 +25,7 @@
             width: 100%;
         }
         img{
-            width:250px;
+            width:360px;
             object-fit:cover;
             margin-top: 5rem;
         }
@@ -36,43 +36,105 @@
             font-family: 'Oswald', sans-serif; 
             color:red; 
             font-size:4rem;
+        }
+        .margin-top{
             margin-top: 5rem;
+
+        }
+        .margin-down{
+            margin-bottom: 10rem;
         }
         .h2-style{
             font-family: "Kanit", sans-serif;
             font-weight: 500;
-            margin-bottom: .5rem;
         }
         .year{
             font-family: "Kanit", sans-serif;
             font-weight: 500;
             font-size: 1.5rem;
         }
-        .lista-custom{
-            list-style: "> ";
+        table{
+            display: table;
+            border-spacing: 32px;
+            border-radius: 35px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,
+                        -20px -20px 60px #ffffff;
         }
+        @counter-style lista-custom{
+            system: cyclic;
+            symbols: "🔴" "🟠" "🟡" "🟢" "🔵";
+        }
+        .list-style{
+            align-content: center;
+            list-style-type: lista-custom;
+        }
+
     </style>
     <body>
         <div class="container">
             <div class="filas">
                 <div class="col">
-                    <img class="borde" 
+                    <img class="borde margin-down" 
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Utplogonuevo.svg/512px-Utplogonuevo.svg.png">
                 </div>
                 <div class="col">
-                    <h1 class="h1-style">Taller de Programación Web</h1>
+                    <h1 class="h1-style margin-top margin-down">Taller de Programación Web</h1>
                 </div>
                 <div class="col">
-                    <ul class="lista-custom">
-                        <li class="h2-style">Nombre Apellido 1</li>
-                        <li class="h2-style">Nombre Apellido 2</li>
-                        <li class="h2-style">Nombre Apellido 3</li>
-                        <li class="h2-style">Nombre Apellido 4</li>
-                        <li class="h2-style">Nombre Apellido 5</li>
+                    <h2 class="h2-style margin-top">- Alex Gutierrez H.</h2>
+                </div>
+                <div class="col margin-down">
+                    <h4 class="year">2024</h4>
+                </div>
+                <div class="col">
+                    <h2 class="h2-style">Hipervínculo: <a href="https://github.com/alexguthu">Github</a></h2>
+                </div>
+                <div class="col">
+                    <h2 class="h2-style">Ejercicios</h2>
+                </div>
+                <div class="col">
+                    <h2 class="h2-style">Tabla</h2>
+                </div>
+
+                <div class="col">
+                    <table class="h2-style">
+                        <thead>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fila A</td>
+                                <td>Fila A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Fila B</td>
+                                <td>Fila B</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Fila C</td>
+                                <td>Fila C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h2 class="h2-style margin-top">Lista ordenada</h2>
+                </div>
+                <div class="col">
+                    <ul class="list-style">
+                        <li>UNO</li>
+                        <li>DOS</li>
+                        <li>TRES</li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h4 class="year">2024</h4>
+                <div class="col margin-top margin-down">
+                    <object data="file:///C:/Users/asus/Downloads/25889853.pdf" type="application/pdf" width="580px" height="800px" >
+                        
+                    </object>
                 </div>
             </div>
     </body>
